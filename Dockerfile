@@ -19,4 +19,4 @@ COPY start.sh /start.sh
 RUN chmod +x /start.sh
 
 EXPOSE 6080
-CMD ["/start.sh"]
+CMD ["bash"]
