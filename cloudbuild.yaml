@@ -1,0 +1,13 @@
+steps:
+  - name: 'gcr.io/cloud-builders/docker'
+    args: [
+      'build',
+      '-t', 'us-central1-docker.pkg.dev/sis-sandbox-463113/android-dev/gui-test',
+      '.'
+    ]
+
+images:
+  - 'us-central1-docker.pkg.dev/sis-sandbox-463113/android-dev/gui-test'
+
+options:
+  logging: CLOUD_LOGGING_ONLY
